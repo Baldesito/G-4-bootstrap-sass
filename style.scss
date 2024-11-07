@@ -1,6 +1,7 @@
 @import "./scss/partials/bootstrap-overrides";
+// style.scss
+$spacers: (
+  "spacer-0.5": 0.5rem
+);
 
-body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-family: 70px;
-}
+.g#{$infix}-#{$key}

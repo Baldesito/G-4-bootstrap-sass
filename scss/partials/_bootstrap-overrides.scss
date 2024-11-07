@@ -1,27 +1,73 @@
-// Option B: Include parts of Bootstrap
+$key: 0.5 !default;
+
+$theme-colors: (
+  "danger": #ff0077,
+  "info": #00ffea,
+  "light": #f3eeff,
+  "epicode-1": #5726c3,
+  "epicode-2": #8625a5,
+  "epicode-3": #cb2376,
+);
+
+// Importa parti di bootstrap per personalizzarli
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../../bootstrap/functions";
-
-// 2. Inc../../bootstrap/lude any default variable overrides here
 
 // 3. Inc../../bootstrap/lude remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../../bootstrap/variables";
 @import "../../bootstrap/variables-dark";
 
-// 4. Inc../../bootstrap/lude any default map overrides here
+$font-sizes: (
+  "1": 3rem,
+  "2": 2.5rem,
+  "3": 2rem,
+  "4": 1.75rem,
+  "5": 1.5rem,
+  "6": 1.25rem,
+  "7": 1rem,
+  "8": 0.875rem,
+  "9": 0.75rem,
+  "10": 0.625rem,
+);
 
-// 5. Inc../../bootstrap/lude remainder of required parts
+$border-widths: (
+  "1": 1px,
+  "2": 2px,
+  "3": 3px,
+  "4": 4px,
+  "5": 5px,
+  "6": 6px,
+  "7": 7px,
+  "8": 8px,
+  "9": 9px,
+  "10": 10px,
+);
+
+$container-max-widths: (
+  "3xl": 1520px,
+  "4xl": 1720px,
+);
+
+$spacers: (
+  "0.5": 0.5rem,
+);
+
+$btn-padding-y: 0.75rem;
+$btn-padding-x: 2.5rem;
+$border-radius: 2rem;
+$badge-border-radius: 50rem;
+$input-border-radius: 50rem;
 
 @import "../../bootstrap/maps";
-@import "../../bootstrap/mixins";
+
 @import "../../bootstrap/root";
 @import "../../bootstrap/utilities";
 @import "../../bootstrap/reboot";
 @import "../../bootstrap/type";
 @import "../../bootstrap/images";
 @import "../../bootstrap/containers";
-@import "../../bootstrap/grid";
+
 @import "../../bootstrap/tables";
 @import "../../bootstrap/forms";
 @import "../../bootstrap/buttons";
